@@ -11,5 +11,6 @@ def solution(arr):
     return answer
 
     # return [s[i] for i in range(len(s)) if s[i] != s[i+1:i+2]]
+    
 arr = [1, 1, 3, 3, 0, 1, 1]
 solution(arr)
