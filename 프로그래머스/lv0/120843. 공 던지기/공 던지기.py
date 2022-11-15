@@ -1,16 +1,12 @@
 def solution(numbers, k):
-    answer = 0
+    answer = 0   
+    index  = 0
     
-    cnt = 0
-    while True:
-        cnt += 1
+    for i in range(k):
+        answer = numbers[index]
+        index += 2
         
-        if k == cnt:
-            if k <= len(numbers):
-                return numbers[cnt-1]
-            else:
-                return numbers[cnt-1]
-        
-        
-    
+        if index >= len(numbers):
+            index -= len(numbers)
+            
     return answer
