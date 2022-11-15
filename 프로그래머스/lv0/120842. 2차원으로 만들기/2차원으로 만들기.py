@@ -7,8 +7,5 @@ def solution(num_list, n):
         for j in range(i,i+n):
             temp.append(num_list[j])
         answer.append(temp)
-    print(answer)
-        
-    
-    
+     
     return answer
