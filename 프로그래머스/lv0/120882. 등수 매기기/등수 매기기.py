@@ -1,13 +1,6 @@
 def solution(score):
     answer = []
-    li     = []
-    
-    for i in score:
-        li.append(sum(i)/len(i))
+    for i in range(len(score)):
+        answer.append((score[i][0]+score[i][1])/len(score))
         
-    sort_arr = sorted(li, reverse = True)
-    
-    for i in li:
-        answer.append(sort_arr.index(i)+1)
-    
-    return answer
+    return [sorted(answer,reverse=True).index(x)+1 for x in answer]
