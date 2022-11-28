@@ -1,2 +1,12 @@
 def solution(numlist, n):
-    return sorted(numlist, key = lambda x: (abs(x - n), -x))
+    
+    answer=sorted([i for i in numlist],key=lambda x:(abs(x-n),-x))
+    
+    
+    print(sorted([i for i in numlist],key=lambda x:(abs(x-n),x)))
+    
+    
+    
+    
+    
+    return answer
