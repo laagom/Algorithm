@@ -6,7 +6,6 @@ def solution(babbling):
         for check in can_char:
             
             if check in babbling[i]:
-                print(f'check : {check}')
-                print(f'babbling[i] : {babbling[i]}')
                 babbling[i] = babbling[i].replace(check, ' ')
+                
     return [char.replace(' ','') for char in babbling].count('')
