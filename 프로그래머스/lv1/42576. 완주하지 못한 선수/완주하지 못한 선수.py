@@ -1,11 +1,14 @@
 def solution(participant, completion):
     answer = ''
+    participant_dict = dict()
     
-    participant.sort()
-    completion.sort()
-        
-    for i in range(len(completion)):
-        if(participant[i] != completion[i]):
-            return participant[i]
-    
-    return participant[len(participant)-1]
+    for person in participant:
+        if person in participant_dict.keys():
+            participant_dict[person] += 1
+        else:
+            participant_dict[person] = 1
+
+    for remove in completion:
+        participant_dict[remove] -= 1
+
+    return ''.join([x for x, y in participant_dict.items() if y != 0])
