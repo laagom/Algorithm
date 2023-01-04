@@ -1,8 +1,14 @@
-from collections import Counter
-
 def solution(nums):
-    count_dict = Counter(nums)
-
-    answer = len(nums)/2 if len(count_dict) > len(nums)/2 else len(count_dict) 
+    answer      = 0
+    pocket_dict = dict()
+    qty         = len(nums)//2
     
-    return answer
+    for num in nums:
+        if num in pocket_dict.keys():
+            pocket_dict[num] += 1
+        else:
+            pocket_dict[num] = 1
+            
+    num_mon = len(pocket_dict.keys())
+    
+    return qty if qty <= num_mon else num_mon
