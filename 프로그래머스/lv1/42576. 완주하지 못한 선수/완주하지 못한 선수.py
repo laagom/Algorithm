@@ -1,14 +1,14 @@
 def solution(participant, completion):
-    answer = ''
-    participant_dict = dict()
     
-    for person in participant:
-        if person in participant_dict.keys():
-            participant_dict[person] += 1
+    players = {}
+    
+    for people in participant:
+        if people in players.keys():    
+            players[people] += 1
         else:
-            participant_dict[person] = 1
-
-    for remove in completion:
-        participant_dict[remove] -= 1
-
-    return ''.join([x for x, y in participant_dict.items() if y != 0])
+            players[people] = 1
+            
+    for player in completion:
+        players[player] += -1
+        
+    return ''.join([player for player, count in players.items() if count == 1])
