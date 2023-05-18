@@ -1,6 +1,4 @@
 def solution(num_list, n):
-    flag = False
-    for num in num_list:
-        if num == n:
-            flag = True
-    return 1 if flag else 0
+    if n in num_list:
+        return 1
+    return  0
