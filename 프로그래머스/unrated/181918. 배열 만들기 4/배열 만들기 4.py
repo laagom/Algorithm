@@ -5,12 +5,10 @@ def solution(arr):
         if not len(stk):
             stk.append(arr[i])
             i += 1
-        elif len(stk) > 0:
+        else:
             if stk[-1] < arr[i]:
                 stk.append(arr[i])
                 i += 1
             elif stk[-1] >= arr[i]:
-                stk.pop()
-                
+                stk.pop()   
     return stk
-
