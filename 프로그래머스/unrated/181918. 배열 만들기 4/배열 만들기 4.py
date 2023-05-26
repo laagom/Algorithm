@@ -10,7 +10,7 @@ def solution(arr):
                 stk.append(arr[i])
                 i += 1
             elif stk[-1] >= arr[i]:
-                del stk[-1]
+                stk.pop()
                 
     return stk
 
