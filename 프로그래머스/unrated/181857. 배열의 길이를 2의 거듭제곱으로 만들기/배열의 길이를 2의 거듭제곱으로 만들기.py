@@ -1,6 +1,7 @@
 def solution(arr):
     a = 1
     b = len(arr)
-    while a < b :
+    while a < b:
         a *= 2
-    return arr + [0] * (a-b)
+        
+    return arr + [0]*(a-b)
