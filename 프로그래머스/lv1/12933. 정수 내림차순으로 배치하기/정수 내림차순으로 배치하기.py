@@ -4,5 +4,5 @@ def solution(n):
         arr.append(str(n%10))
         n //= 10
     arr.sort(reverse=True)
-    return int(''.join([char for char in arr]))
+    return int(''.join(arr))
     
