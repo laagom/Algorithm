@@ -1,8 +1,9 @@
 def solution(n):
     if n == 1:
         return [[1]]
+    direction = {'r': [0, 1], 'd': [1, 0], 'l': [0, -1], 'u': [-1, 0]}
     
-    answer = [[0]*n for i in range(n)] # 배열 초기화
+    answer = [[0]*n for i in range(n)]
     x = 0
     y = 0
     dir = 'r'
@@ -10,20 +11,18 @@ def solution(n):
     for i in range(1, n**2+1):
         answer[x][y] = i
         if dir == 'r':
-            y += 1
-            if y == n-1 or answer[x][y+1] != 0: # 맨 끝에 도달했거나 가려는 곳에 이미 값이 있으면 방향 전환
+            if y == n-1 or answer[x][y+1] != 0:
                 dir = 'd'
         elif dir == 'd':
-            x += 1
             if x == n-1 or answer[x+1][y] != 0:
                 dir = 'l'
         elif dir == 'l':
-            y -= 1
             if y == 0 or answer[x][y-1] != 0:
                 dir = 'u'
         elif dir == 'u':
-            x -= 1
             if x == n-1 or answer[x-1][y] != 0:
                 dir = 'r'
+        x += direction[dir][0]
+        y += direction[dir][1]
                 
     return answer
