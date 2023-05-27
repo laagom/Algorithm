@@ -1,6 +1,5 @@
 def solution(n):
-    answer = 0
-    for char in str(n):
-        answer += int(char)
+    if n < 10:
+        return n
         
-    return answer
+    return n%10 + solution(n//10)
