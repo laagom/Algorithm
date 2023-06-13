@@ -6,9 +6,9 @@ public class Solution {
         int n = sc.nextInt();
         
         if(n%2 == 0){
-            System.out.println(String.format("%s is even", n));
+            System.out.printf("%s is even", n);
         }else{
-            System.out.println(String.format("%s is odd", n));
+            System.out.printf("%s is odd", n);
         }
     }
 }
