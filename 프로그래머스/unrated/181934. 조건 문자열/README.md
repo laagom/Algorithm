@@ -1,10 +1,10 @@
 # [unrated] 조건 문자열 - 181934 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181934) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181934?language=java) 
 
 ### 성능 요약
 
-메모리: 10.1 MB, 시간: 0.02 ms
+메모리: 75.3 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -82,6 +82,10 @@ Empty
 <ul>
 <li>41 &gt; 78은 거짓이기 때문에 0을 return합니다.</li>
 </ul>
+
+<hr>
+
+<p>※ 2023.05.31 테스트 케이스가 수정되었습니다. 기존에 제출한 코드가 통과하지 못할 수도 있습니다.</p>
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
