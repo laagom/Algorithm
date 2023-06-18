@@ -7,8 +7,7 @@ class Solution {
         Map<String, BiFunction<Integer, Integer, Integer>> calcs = Map.of(
             "true", (num1, num2) -> num1 + num2,
             "false", (num1, num2) -> num1 - num2
-        );
-        
+        );   
         return calcs.get(var).apply(a, b);
     }
 }
