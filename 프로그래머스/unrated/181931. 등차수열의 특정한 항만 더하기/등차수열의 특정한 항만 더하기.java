@@ -3,7 +3,7 @@ class Solution {
     public int solution(int a, int d, boolean[] included) {
         ArrayList<Integer> list = new ArrayList<>();     
         for(int i = 0;i < included.length; i++) {
-            System.out.println("i : " + i + "일때, boolean : " + included[i]);
+            // System.out.println("i : " + i + "일때, boolean : " + included[i]);
             if(included[i]) { 
                 list.add(a);
             }   
