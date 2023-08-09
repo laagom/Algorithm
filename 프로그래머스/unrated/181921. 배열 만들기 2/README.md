@@ -1,10 +1,10 @@
 # [unrated] 배열 만들기 2 - 181921 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181921) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181921?language=java) 
 
 ### 성능 요약
 
-메모리: 10.2 MB, 시간: 6.06 ms
+메모리: 67.3 MB, 시간: 4.73 ms
 
 ### 구분
 
