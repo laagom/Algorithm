@@ -1,10 +1,14 @@
+import java.util.List;
 import java.util.ArrayList;
+
 class Solution {
-    public ArrayList<Integer> solution(int start, int end) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        for(int i = start; i <= end; i++){
-            list.add(i);
+    public List<Integer> solution(int start_num, int end_num) {
+        List<Integer> answer = new ArrayList<Integer>();
+        int loop_num = start_num;
+        while(loop_num <= end_num) {
+            answer.add(loop_num);
+            loop_num++;
         }
-        return list;
+        return answer;
     }
 }
