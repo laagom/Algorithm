@@ -1,10 +1,10 @@
-# [unrated] 길이에 따른 연산 - 181879 
+# [level unrated] 길이에 따른 연산 - 181879 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181879) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181879?language=java) 
 
 ### 성능 요약
 
-메모리: 10.1 MB, 시간: 0.03 ms
+메모리: 76.9 MB, 시간: 0.66 ms
 
 ### 구분
 
@@ -12,7 +12,11 @@
 
 ### 채점결과
 
-Empty
+정확성: 100.0<br/>합계: 100.0 / 100.0
+
+### 제출 일자
+
+2024년 1월 6일 17:57:57
 
 ### 문제 설명
 
@@ -25,6 +29,7 @@ Empty
 <ul>
 <li>2 ≤ <code>num_list</code>의 길이 ≤ 20</li>
 <li>1 ≤ <code>num_list</code>의 원소 ≤ 9</li>
+<li><code>num_list</code>의 원소를 모두 곱했을 때&nbsp;2,147,483,647를 넘는 입력은 주어지지 않습니다.</li>
 </ul>
 
 <hr>
@@ -63,4 +68,4 @@ Empty
 </ul>
 
 
-> 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
+> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
