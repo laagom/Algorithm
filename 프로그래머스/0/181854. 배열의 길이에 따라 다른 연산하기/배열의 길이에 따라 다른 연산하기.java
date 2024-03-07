@@ -9,6 +9,7 @@ class Solution {
                 if(i%2 == 1) {
                     arr[i] += n;
                 }
+                
             // 배열의 길이가 홀수인경우
             }else {
                 // 짝수 위치의 값에 n 증가
