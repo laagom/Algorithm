@@ -1,14 +1,12 @@
 class Solution {
     public int solution(int n) {
-        return getDiviSor(n);
+        return getSumDivisor(n);
     }
     
-    public int getDiviSor(int n) {
-        int amount = 0;
-        for(int i = 1; i <= n; i++) {
-            if(n%i == 0)
-                amount += i;
-        }
-        return amount;
+    public int getSumDivisor(int num) {
+        int rtnVal = 0;
+        for(int i = 1; i <= num; i++)
+            if(num%i == 0) rtnVal += i;
+        return rtnVal;
     }
 }
