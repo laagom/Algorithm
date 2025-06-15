@@ -1,13 +1,11 @@
-import java.util.List;
-import java.util.ArrayList;
-
+import java.util.*;
 class Solution {
     public List<Integer> solution(long n) {
-        List<Integer> rtnList = new ArrayList<Integer>();
+        String numStr = String.valueOf(n);
+        List<Integer> numArray = new ArrayList();
+        for(int i = numStr.length()-1; i >= 0; i--)
+            numArray.add(numStr.charAt(i)-'0');
         
-        String numberStr = String.valueOf(n);
-        for(int i = String.valueOf(n).length()-1; i >= 0; i--)
-            rtnList.add(Integer.valueOf(String.valueOf(numberStr.charAt(i))));
-        return rtnList;
+        return numArray;
     }
 }
